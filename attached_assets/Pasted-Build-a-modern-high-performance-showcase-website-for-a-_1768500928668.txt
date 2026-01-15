@@ -1,0 +1,40 @@
+Build a modern, high-performance showcase website for a Computer Science Class Section.
+
+**Tech Stack:** React, Vite, Tailwind CSS, Framer Motion, Lucide React (icons).
+
+**Design Theme: "The System Core"**
+The aesthetic should be "Cyber-Academic" — a mix of a clean code editor (VS Code style) and a modern creative agency.
+- **Background:** Deep almost-black (#0a0a0a) with subtle grid lines.
+- **Accents:** Neon Green (Terminal style) and Electric Purple (Future tech).
+- **Typography:** Use a Monospace font (like Fira Code) for headers to emphasize the CS identity, and a clean Sans-Serif (Inter) for body text.
+
+**Structure & Content Requirements:**
+
+1.  **Hero Section (The Hybrid Engine):**
+    - Large animated headline: "The Source Code of Section [Insert Name]".
+    - A sub-headline emphasizing our unique identity: "Where 12th Grade Theory meets Diploma Industry Experience."
+    - Visual: A split-screen or blending animation showing "Raw Code" merging with "Polished UI."
+
+2.  **About Section (The Architecture):**
+    - Use a 'bento box' grid layout to show our stats.
+    - Card 1: "The DSY Advantage" - Text about hands-on industry experience and server-room knowledge.
+    - Card 2: "The Fresh Perspective" - Text about the 1st-year students bringing new theoretical ideas.
+    - Visual: Use icons representing 'Hardware' (wrench/chip) and 'Software' (brackets).
+
+3.  **Activities Section (Off-Duty Protocols):**
+    - **Football Card:** Design this to look like a tactical heatmap or a FIFA player card. Title: "Runtime Terrors (Football Team)."
+    - **Chess Card:** Design this with a checkboard pattern background. Title: "Grandmaster's Corner." Add a funny badge that says "Risk Level: Caught by Teacher."
+    - **Gaming/Tech:** A card for the "Lan Party" group.
+
+4.  **The "Glitch" Gallery (Classmates):**
+    - A photo grid where the images have a slight hover glitch effect.
+    - Add a few placeholder "Fake Profiles" like:
+      - "The Syntax Error" (Sleeps in class, aces exams).
+      - "The Hardware Whisperer" (Fixes lab PCs).
+
+5.  **Interactive Easter Egg:**
+    - Add a small, hidden chess piece icon in the footer. If clicked, show a popup modal that says: "You have been caught playing chess! -10 Attendance."
+
+**Animations:**
+- Use Framer Motion for scroll reveals (fade-in-up).
+- The Hero text should have a "typing" effect.
