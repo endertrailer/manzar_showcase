@@ -11,7 +11,7 @@ The aesthetic should be "Cyber-Academic" — a mix of a clean code editor (VS Co
 **Structure & Content Requirements:**
 
 1.  **Hero Section (The Hybrid Engine):**
-    - Large animated headline: "The Source Code of Section [Insert Name]".
+    - Large animated headline: "The Source Code of Section A9".
     - A sub-headline emphasizing our unique identity: "Where 12th Grade Theory meets Diploma Industry Experience."
     - Visual: A split-screen or blending animation showing "Raw Code" merging with "Polished UI."
 

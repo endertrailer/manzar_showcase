@@ -6,7 +6,7 @@ import heroBg from "@assets/generated_images/cyberpunk_code_merging_with_clean_u
 
 export default function Hero() {
   const [text, setText] = useState("");
-  const fullText = "The Source Code of Section [Insert Name]";
+  const fullText = "The Source Code of Section A9";
 
   useEffect(() => {
     let i = 0;
