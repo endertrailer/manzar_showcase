@@ -41,16 +41,20 @@ export default function Hero() {
           >
             <div className="flex items-center gap-2 text-primary mb-4 font-mono text-sm tracking-wider">
               <Terminal className="w-4 h-4" />
-              <span>SYSTEM.INIT(SECTION_12)</span>
+              <span>SYSTEM.INIT(A9)</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-6xl font-bold font-mono tracking-tighter leading-tight mb-4 min-h-[120px] md:min-h-[160px]">
               {text}
               <span className="animate-pulse text-primary">_</span>
             </h1>
 
             <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-              Where 12th Grade Theory meets <span className="text-secondary font-semibold">Diploma Industry Experience</span>.
+              Where 12th Grade Theory meets{" "}
+              <span className="text-secondary font-semibold">
+                Diploma Industry Experience
+              </span>
+              .
             </p>
           </motion.div>
 
@@ -60,11 +64,18 @@ export default function Hero() {
             transition={{ delay: 1.5, duration: 0.5 }}
             className="flex gap-4"
           >
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono group">
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono group"
+            >
               Explore System
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="border-primary/20 hover:bg-primary/10 text-primary font-mono">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary/20 hover:bg-primary/10 text-primary font-mono"
+            >
               View Documentation
             </Button>
           </motion.div>
@@ -78,39 +89,41 @@ export default function Hero() {
           className="relative hidden lg:block"
         >
           <div className="relative aspect-square max-w-md mx-auto">
-             {/* Decorative code block visual */}
-             <div className="absolute inset-0 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg p-6 font-mono text-xs text-primary/80 shadow-2xl overflow-hidden">
-                <div className="opacity-50 select-none">
-                  {Array.from({ length: 20 }).map((_, i) => (
-                    <div key={i} className="mb-2">
-                      <span className="text-muted-foreground mr-4">{i + 1}</span>
-                      <span style={{ marginLeft: `${Math.random() * 40}px` }}>
-                        const future = new Promise((resolve) =&gt; ...
-                      </span>
-                    </div>
-                  ))}
-                </div>
-             </div>
-             
-             {/* Floating UI Element */}
-             <motion.div 
+            {/* Decorative code block visual */}
+            <div className="absolute inset-0 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-lg p-6 font-mono text-xs text-primary/80 shadow-2xl overflow-hidden">
+              <div className="opacity-50 select-none">
+                {Array.from({ length: 20 }).map((_, i) => (
+                  <div key={i} className="mb-2">
+                    <span className="text-muted-foreground mr-4">{i + 1}</span>
+                    <span style={{ marginLeft: `${Math.random() * 40}px` }}>
+                      const future = new Promise((resolve) =&gt; ...
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Floating UI Element */}
+            <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               className="absolute -right-8 top-20 bg-secondary/10 border border-secondary/50 p-4 rounded-xl backdrop-blur-md shadow-lg w-64"
-             >
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-3 h-3 rounded-full bg-secondary animate-pulse" />
-                  <span className="text-secondary font-bold text-sm">Compiling Success...</span>
-                </div>
-                <div className="h-2 bg-secondary/20 rounded-full overflow-hidden">
-                  <motion.div 
-                    initial={{ width: "0%" }}
-                    animate={{ width: "100%" }}
-                    transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
-                    className="h-full bg-secondary"
-                  />
-                </div>
-             </motion.div>
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-3 h-3 rounded-full bg-secondary animate-pulse" />
+                <span className="text-secondary font-bold text-sm">
+                  Compiling Success...
+                </span>
+              </div>
+              <div className="h-2 bg-secondary/20 rounded-full overflow-hidden">
+                <motion.div
+                  initial={{ width: "0%" }}
+                  animate={{ width: "100%" }}
+                  transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
+                  className="h-full bg-secondary"
+                />
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>

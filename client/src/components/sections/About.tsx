@@ -8,14 +8,14 @@ export default function About() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0 }
+    show: { opacity: 1, y: 0 },
   };
 
   return (
@@ -26,11 +26,12 @@ export default function About() {
             <span className="text-primary">02.</span> System Architecture
           </h2>
           <p className="text-muted-foreground max-w-2xl">
-            Our section is built on a dual-core processor: robust industry experience merging with fresh theoretical innovation.
+            Our section is built on a dual-core processor: industry experience
+            merging with fresh theoretical innovation.
           </p>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
@@ -43,11 +44,14 @@ export default function About() {
               <div className="absolute top-0 right-0 p-32 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-primary/10 transition-colors" />
               <CardHeader>
                 <Server className="w-12 h-12 text-primary mb-4" />
-                <CardTitle className="text-2xl font-mono text-primary">The DSY Advantage</CardTitle>
+                <CardTitle className="text-2xl font-mono text-primary">
+                  The DSY Advantage
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  We don't just write code; we deploy solutions. With hands-on experience in server management, network architecture, and real-world software deployment, our diploma background gives us the "Industry Patch" capable of handling production environments.
+                  We The DSY know the ancient technique of using Turbo c asd
+                  Turbo c++
                 </p>
               </CardContent>
             </Card>
@@ -59,11 +63,15 @@ export default function About() {
               <div className="absolute bottom-0 left-0 p-24 bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 group-hover:bg-secondary/10 transition-colors" />
               <CardHeader>
                 <Braces className="w-12 h-12 text-secondary mb-4" />
-                <CardTitle className="text-2xl font-mono text-secondary">The Fresh Perspective</CardTitle>
+                <CardTitle className="text-2xl font-mono text-secondary">
+                  The Fresh Perspective
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  The 1st-year influx brings new algorithms to our codebase. Unconstrained by legacy systems, they introduce modern theoretical approaches that challenge established protocols.
+                  The 1st-year influx brings new algorithms to our codebase.
+                  Unconstrained by legacy systems, they introduce modern
+                  theoretical approaches that challenge established protocols.
                 </p>
               </CardContent>
             </Card>
@@ -73,28 +81,35 @@ export default function About() {
           <motion.div variants={item} className="md:col-span-1">
             <Card className="h-full flex flex-col justify-center items-center bg-card/30 border-white/10">
               <Cpu className="w-8 h-8 text-primary mb-2" />
-              <div className="text-4xl font-bold font-mono text-foreground">99.9%</div>
+              <div className="text-4xl font-bold font-mono text-foreground">
+                99.9%
+              </div>
               <div className="text-sm text-muted-foreground">Uptime</div>
             </Card>
           </motion.div>
 
           {/* Card 4: Stats - Software */}
-           <motion.div variants={item} className="md:col-span-1">
+          <motion.div variants={item} className="md:col-span-1">
             <Card className="h-full flex flex-col justify-center items-center bg-card/30 border-white/10">
               <Network className="w-8 h-8 text-secondary mb-2" />
-              <div className="text-4xl font-bold font-mono text-foreground">∞</div>
+              <div className="text-4xl font-bold font-mono text-foreground">
+                ∞
+              </div>
               <div className="text-sm text-muted-foreground">Potential</div>
             </Card>
           </motion.div>
-          
-           {/* Card 5: Stats - Coffee */}
-           <motion.div variants={item} className="md:col-span-1">
+
+          {/* Card 5: Stats - Coffee */}
+          <motion.div variants={item} className="md:col-span-1">
             <Card className="h-full flex flex-col justify-center items-center bg-card/30 border-white/10">
-              <div className="text-4xl font-bold font-mono text-foreground">404</div>
-              <div className="text-sm text-muted-foreground">Sleep Not Found</div>
+              <div className="text-4xl font-bold font-mono text-foreground">
+                404
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Sleep Not Found
+              </div>
             </Card>
           </motion.div>
-
         </motion.div>
       </div>
     </section>
