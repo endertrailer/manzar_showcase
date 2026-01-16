@@ -21,7 +21,7 @@ export default function About() {
   return (
     <section className="py-24 bg-background relative border-t border-white/5">
       <div className="container px-4 md:px-6">
-        <div className="mb-12">
+        <div className="mb-12 flex flex-col items-center text-center">
           <h2 className="text-3xl md:text-5xl font-bold font-mono mb-4">
             <span className="text-primary">02.</span> System Architecture
           </h2>
