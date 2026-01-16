@@ -34,7 +34,7 @@ export default function Gallery() {
   return (
     <section className="py-24 bg-background relative">
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl md:text-5xl font-bold font-mono mb-12 text-right">
+        <h2 className="text-3xl md:text-5xl font-bold font-mono mb-12 text-center">
           <span className="text-primary">04.</span> Classmates.exe
         </h2>
 
@@ -49,15 +49,15 @@ export default function Gallery() {
               className="group relative aspect-[3/4] overflow-hidden rounded-lg bg-card border border-white/5"
             >
               <div className="absolute inset-0 overflow-hidden">
-                 {/* Glitch Effect Layers */}
-                <img 
-                  src={student.image} 
+                {/* Glitch Effect Layers */}
+                <img
+                  src={student.image}
                   alt={student.name}
                   className="w-full h-full object-cover transition-all duration-300 group-hover:opacity-50 grayscale group-hover:grayscale-0"
                 />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 mix-blend-color-dodge bg-primary/20" />
               </div>
-              
+
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-background to-transparent translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 <h3 className={`text-lg font-bold font-mono ${student.glitchColor} glitch-hover`}>
                   {student.name}
