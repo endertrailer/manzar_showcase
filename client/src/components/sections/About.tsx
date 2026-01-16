@@ -36,10 +36,10 @@ export default function About() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[200px]"
+          className="grid grid-cols-1 md:grid-cols-6 gap-6 auto-rows-[200px]"
         >
           {/* Card 1: DSY Advantage - Large */}
-          <motion.div variants={item} className="md:col-span-2 row-span-2">
+          <motion.div variants={item} className="md:col-span-3 row-span-2">
             <Card className="h-full bg-card/50 border-primary/20 backdrop-blur hover:bg-card/80 transition-colors group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-32 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-primary/10 transition-colors" />
               <CardHeader className="flex flex-col items-center text-center">
@@ -58,7 +58,7 @@ export default function About() {
           </motion.div>
 
           {/* Card 2: Fresh Perspective */}
-          <motion.div variants={item} className="md:col-span-1 row-span-2">
+          <motion.div variants={item} className="md:col-span-3 row-span-2">
             <Card className="h-full bg-card/50 border-secondary/20 backdrop-blur hover:bg-card/80 transition-colors group relative overflow-hidden">
               <div className="absolute bottom-0 left-0 p-24 bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 group-hover:bg-secondary/10 transition-colors" />
               <CardHeader className="flex flex-col items-center text-center">
@@ -78,7 +78,7 @@ export default function About() {
           </motion.div>
 
           {/* Card 3: Stats - Hardware */}
-          <motion.div variants={item} className="md:col-span-1">
+          <motion.div variants={item} className="md:col-span-2">
             <Card className="h-full flex flex-col justify-center items-center bg-card/30 border-white/10">
               <Cpu className="w-8 h-8 text-primary mb-2" />
               <div className="text-4xl font-bold font-mono text-foreground">
@@ -89,7 +89,7 @@ export default function About() {
           </motion.div>
 
           {/* Card 4: Stats - Software */}
-          <motion.div variants={item} className="md:col-span-1">
+          <motion.div variants={item} className="md:col-span-2">
             <Card className="h-full flex flex-col justify-center items-center bg-card/30 border-white/10">
               <Network className="w-8 h-8 text-secondary mb-2" />
               <div className="text-4xl font-bold font-mono text-foreground">
@@ -100,7 +100,7 @@ export default function About() {
           </motion.div>
 
           {/* Card 5: Stats - Coffee */}
-          <motion.div variants={item} className="md:col-span-1">
+          <motion.div variants={item} className="md:col-span-2">
             <Card className="h-full flex flex-col justify-center items-center bg-card/30 border-white/10">
               <div className="text-4xl font-bold font-mono text-foreground">
                 404
