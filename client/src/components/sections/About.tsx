@@ -50,7 +50,7 @@ export default function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  We The DSY know the ancient technique of using Turbo c asd
+                  We The DSY know the ancient technique of using Turbo c and
                   Turbo c++
                 </p>
               </CardContent>
