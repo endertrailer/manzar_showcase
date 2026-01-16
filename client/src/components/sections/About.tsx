@@ -42,13 +42,13 @@ export default function About() {
           <motion.div variants={item} className="md:col-span-2 row-span-2">
             <Card className="h-full bg-card/50 border-primary/20 backdrop-blur hover:bg-card/80 transition-colors group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-32 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-primary/10 transition-colors" />
-              <CardHeader>
+              <CardHeader className="flex flex-col items-center text-center">
                 <Server className="w-12 h-12 text-primary mb-4" />
                 <CardTitle className="text-2xl font-mono text-primary">
                   The DSY Advantage
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="text-center">
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   We The DSY know the ancient technique of using Turbo c and
                   Turbo c++
@@ -61,13 +61,13 @@ export default function About() {
           <motion.div variants={item} className="md:col-span-1 row-span-2">
             <Card className="h-full bg-card/50 border-secondary/20 backdrop-blur hover:bg-card/80 transition-colors group relative overflow-hidden">
               <div className="absolute bottom-0 left-0 p-24 bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 group-hover:bg-secondary/10 transition-colors" />
-              <CardHeader>
+              <CardHeader className="flex flex-col items-center text-center">
                 <Braces className="w-12 h-12 text-secondary mb-4" />
                 <CardTitle className="text-2xl font-mono text-secondary">
                   The Fresh Perspective
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="text-center">
                 <p className="text-muted-foreground">
                   The 1st-year influx brings new algorithms to our codebase.
                   Unconstrained by legacy systems, they introduce modern
