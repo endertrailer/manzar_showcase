@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Terminal } from "lucide-react";
+import { Link } from "wouter";
+import { TerminalBoot } from "@/hooks/useEasterEggs";
 import heroBg from "@assets/generated_images/cyberpunk_code_merging_with_clean_ui.png";
 
 export default function Hero() {
   const [text, setText] = useState("");
+  const [bootActive, setBootActive] = useState(false);
   const fullText = "The Source Code of Section A9";
 
   useEffect(() => {
@@ -32,7 +34,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,65,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,65,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       </div>
 
-      <div className="container relative z-10 px-4 md:px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container w-full relative z-10 px-4 md:px-6 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text Content */}
         <div className="space-y-6">
           <motion.div
@@ -40,7 +42,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex items-center gap-2 text-primary mb-4 font-mono text-sm tracking-wider">
+            <div
+              className="flex items-center gap-2 text-primary mb-4 font-mono text-sm tracking-wider cursor-pointer hover:text-secondary transition-colors"
+              onClick={() => setBootActive(true)}
+              title="Click me!"
+            >
               <Terminal className="w-4 h-4" />
               <span>SYSTEM.INIT(A9)</span>
             </div>
@@ -65,14 +71,13 @@ export default function Hero() {
             transition={{ delay: 1.5, duration: 0.5 }}
             className="flex gap-4"
           >
-
-            <Link href="/journey">
+            <Link href="/story">
               <Button
                 size="lg"
-                variant="outline"
-                className="border-primary/20 hover:bg-primary/10 text-primary font-mono"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono group"
               >
-                Our Journey Blogpost
+                Explore System
+                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
           </motion.div>
@@ -124,6 +129,9 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+
+      {/* Easter Egg: Terminal Boot Sequence */}
+      <TerminalBoot active={bootActive} onComplete={() => setBootActive(false)} />
     </section>
   );
 }

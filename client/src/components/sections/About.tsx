@@ -20,10 +20,11 @@ export default function About() {
 
   return (
     <section className="py-24 bg-background relative border-t border-white/5">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-8 lg:px-12 max-w-[1600px] mx-auto">
         <div className="mb-12 flex flex-col items-center text-center">
-          <h2 className="text-3xl md:text-5xl font-bold font-mono mb-4">
-            <span className="text-primary">02.</span> System Architecture
+          <h2 className="text-3xl md:text-5xl font-bold font-mono mb-4 flex items-center justify-center gap-3">
+            <span className="text-primary">02.</span>
+            <span>System Architecture</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl">
             Our section is built on a dual-core processor: industry experience
@@ -50,8 +51,7 @@ export default function About() {
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  We The DSY know the ancient technique of using Turbo c and
-                  Turbo c++
+                  Masters of the Blue Screen. We survived the era of manual memory management and Turbo C++, ensuring no pointer goes dangling.
                 </p>
               </CardContent>
             </Card>
@@ -69,9 +69,7 @@ export default function About() {
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-muted-foreground">
-                  The 1st-year influx brings new algorithms to our codebase.
-                  Unconstrained by legacy systems, they introduce modern
-                  theoretical approaches that challenge established protocols.
+                  The Git Pushers. Born in the cloud, raised on React. They don't just fix bugs; they refactor the entire reality of the department.
                 </p>
               </CardContent>
             </Card>
