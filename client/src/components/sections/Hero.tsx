@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Terminal } from "lucide-react";
@@ -64,20 +65,16 @@ export default function Hero() {
             transition={{ delay: 1.5, duration: 0.5 }}
             className="flex gap-4"
           >
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono group"
-            >
-              Explore System
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary/20 hover:bg-primary/10 text-primary font-mono"
-            >
-              View Documentation
-            </Button>
+
+            <Link href="/journey">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary/20 hover:bg-primary/10 text-primary font-mono"
+              >
+                Our Journey Blogpost
+              </Button>
+            </Link>
           </motion.div>
         </div>
 
