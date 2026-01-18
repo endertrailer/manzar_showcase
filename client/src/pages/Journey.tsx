@@ -82,8 +82,7 @@ export default function Journey() {
                             <div className="bg-card/50 p-6 rounded-xl border border-white/5">
                                 <h3 className="font-bold mb-2 text-primary">Aesthetic</h3>
                                 <p className="text-sm text-muted-foreground">
-                                    A "Cyber-Academic" fusion. We wanted the site to feel like a premium VS Code environment
-                                    merged with a modern creative agency portfolio. Deep #0a0a0a backgrounds with neon terminal accents.
+                                    A simple yet modern dark-themed aesthetic. We focused on deep and dark backgrounds with neon terminal accents to create a clean, professional look that balances creativity with technical precision.
                                 </p>
                             </div>
                             <div className="bg-card/50 p-6 rounded-xl border border-white/5">
